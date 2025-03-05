@@ -13,7 +13,7 @@ export const Navbar = () => {
           <img 
             src={barberlogo} 
             alt="XhinoBarber" 
-            className="navbar-brand-img"  // Agregar clase para estilizar
+            className="navbar-brand-img"
           />
             XhinoBarber
           </Link>
