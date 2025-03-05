@@ -1,10 +1,9 @@
+import { AppRouter } from "./router/AppRouter"
 
 export const HomeApp = () => {
   return (
     <>
-    
-    <h1>XhinoBarber</h1>
-
+    <AppRouter />
     </>
   )
 }
