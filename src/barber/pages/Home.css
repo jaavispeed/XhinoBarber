@@ -27,6 +27,36 @@
     background-color: black;
     border-radius: 50px;
     width: 15%;
-    padding: 30px 30px; /* Aumenta el espacio interior (alto y ancho) */
+    padding: 30px 30px; 
     font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 50%; 
+        padding: 20px 20px; 
+        font-size: 24px;
+    }
+
+    .imagenes {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .image-text {
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 70%; 
+        font-size: 20px; 
+        padding: 15px 15px; 
+    }
+
+    .presentacion {
+        font-size: 20px; 
+        margin-top: 10%; 
+    }
 }

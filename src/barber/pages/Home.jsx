@@ -21,7 +21,7 @@ export const LandingPage = () => {
       <Carousel />
 
       <div className="button-container">
-        <button className="button"> Agenda tu hora</button>
+        <button className="button">Agenda tu hora</button>
       </div>
     </>
   )

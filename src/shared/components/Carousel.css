@@ -22,12 +22,9 @@
     top: 50%;
     transform: translateY(-100%); 
     z-index: 10; 
-
-
 }
 
 
-/* Efecto hover */
 .swiper-button-next:hover, .swiper-button-prev:hover {
     color: #797979;
 }
