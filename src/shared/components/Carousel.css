@@ -3,14 +3,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* Para que el carrusel ocupe toda la altura de la pantalla */
+    height: 50vh;
     margin-top: 2%;
+    position: relative;
 }
 
 .swiper-slide img {
     display: block;
     margin: 0 auto;
-    max-width: 80%; /* Ajusta el tamaño máximo de la imagen dentro del contenedor */
-    max-height: 80%; /* Ajusta el tamaño máximo de la imagen dentro del contenedor */
+    max-width: 80%;
+    max-height: 80%; 
     border-radius: 100px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%); 
+    z-index: 10; 
+
+
+}
+
+
+/* Efecto hover */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #797979;
 }
