@@ -1,0 +1,16 @@
+/* Carousel.css */
+.mySwiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Para que el carrusel ocupe toda la altura de la pantalla */
+    margin-top: 2%;
+}
+
+.swiper-slide img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen dentro del contenedor */
+    max-height: 80%; /* Ajusta el tamaño máximo de la imagen dentro del contenedor */
+    border-radius: 100px;
+}

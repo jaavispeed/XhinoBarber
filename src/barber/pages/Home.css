@@ -1,0 +1,32 @@
+.presentacion {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+
+.imagenes{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-text{
+    display: flex;
+    align-items: center;
+}
+
+.button-container{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    width: 15%;
+    padding: 30px 30px; /* Aumenta el espacio interior (alto y ancho) */
+    font-size: 30px;
+}
