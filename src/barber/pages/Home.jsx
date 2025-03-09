@@ -6,6 +6,7 @@ export const LandingPage = () => {
   return (
     <>
       <div className="container">
+        <h1 className="text-center">Soy Jose Moya, barbero comprometido <br></br> con ofrecer cortes de pelo de calidad.</h1>
         {/* Primer Logo y Texto */}
         <div className="logo-container">
           <a href="https://www.instagram.com/xhin9._/" target="_blank" rel="noopener noreferrer">
@@ -28,7 +29,6 @@ export const LandingPage = () => {
           </a>
         </div>
 
-        <h1 className="text-center">Soy Jose Moya, barbero comprometido <br></br> con ofrecer cortes de pelo de calidad.</h1>
 
         <Carousel />
 

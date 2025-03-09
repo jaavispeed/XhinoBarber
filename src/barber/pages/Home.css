@@ -18,17 +18,13 @@ a {
 .logo-container {
     display: flex;
     align-items: center;
-    position: absolute;
-    margin-top: 20px;
-    left: 20px;
+    position: center;
 }
 
 .address-container {
     display: flex;
     align-items: center;
-    position: absolute;
-    margin-top: 45px;
-    left: 20px;
+    position: center;
 }
 
 .agenda-button {
