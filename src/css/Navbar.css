@@ -1,6 +1,9 @@
 .navbar {
   background-color: black;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra Nabvar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra Navbar */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina el relleno si es necesario */
 }
 
 .navbar .navbar-brand {

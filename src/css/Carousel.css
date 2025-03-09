@@ -3,27 +3,42 @@
     height: 500px; 
     margin-bottom: 30px;
     margin-top: 20px;
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    
-    /* Aseguramos que cada slide sea cuadrado */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    position: relative; 
-  }
-  
-  .swiper-slide img {
+    position: relative;
+}
+
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;  
-    object-position: center; 
-  }
-  
+    object-position: center;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .swiper {
+        width: 100%; 
+        height: 300px; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 250px; /* Ajusta aún más la altura en pantallas muy pequeñas */
+    }
+    
+    .swiper-slide {
+        font-size: 14px; /* Reducir el tamaño del texto si es necesario */
+    }
+}
