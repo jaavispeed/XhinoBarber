@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { LandingPage } from "../barber/pages/Home";
-import { Navbar } from "../shared/components/Navbar";
+import { LandingPage } from "../components/Home";
+import { Navbar } from "../components/Navbar";
 
 export const AppRouter = () => {
   return (

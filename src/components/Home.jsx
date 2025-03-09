@@ -1,5 +1,5 @@
-import Carousel from "../../components/Carousel";
-import "./Home.css"
+import Carousel from "./Carousel";
+import "../css/Home.css";
 
 
 export const LandingPage = () => {
