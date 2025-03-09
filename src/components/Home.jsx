@@ -31,7 +31,7 @@ export const LandingPage = () => {
         <Carousel />
 
         {/* Botón Agenda ahora */}
-        <button onClick={() => document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' })} className="agenda-button">Agenda tu cita</button>
+        <button onClick={() => document.getElementById('precios')?.scrollIntoView({ behavior: 'smooth' })} className="agenda-button">Agenda tu cita</button>
         <footer>
           <p>&copy; 2025 XhinoBarber. Todos los derechos reservados.</p>
         </footer>

@@ -1,13 +1,28 @@
-/* TarjetaPrecio.css */
+.contenedor {
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
 .centrado {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .tarjeta-precio {
   width: 350px;
+  height: 450px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -32,28 +47,31 @@
 
 .precio {
   font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 0.5rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .tarjeta-body {
   padding: 2rem;
 }
 
+.incluye {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 .tarjeta-body ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  align-items: flex-start;
 }
 
 .tarjeta-body .lista-item {
-  margin-bottom: 1px;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
+
 } 
 
 .btn-agendar {
@@ -62,13 +80,15 @@
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 50px;
+  text-transform: uppercase;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
   display: block;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .btn-agendar:hover {
-  background: #23272b;
+  background: #25292d;
   transform: scale(1.05);
 }
