@@ -14,12 +14,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <HomeApp />
       </div>
       <div className="separator"></div>
-      <div id="formulario">
-        <Formulario />
-      </div>
-      <div className="separator"></div>
       <div id="precios">
         <TarjetaPrecio />
+      </div>
+      <div className="separator"></div>
+      <div id="formulario">
+        <Formulario />
       </div>
       
     </BrowserRouter>
