@@ -3,8 +3,49 @@ body {
 }
 
 .separator {
-  width: 50%; /* O usa un valor fijo, como 300px */
+  width: 50%; 
   height: 2px;
   background-color: #ccc;
-  margin: 20px auto; /* Centrada horizontalmente */
+  margin: 20px auto; 
+}
+/* Estilo general del scrollbar */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+/* Estilo del track (el fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: #ffffff; /* Fondo blanco del track */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo del thumb (la parte que se mueve dentro del track) */
+::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(45deg, 
+    #ff0000, #ff0000 4px,  /* Rojo */
+    #ffffff 4px, #ffffff 8px, /* Blanco */
+    #0000ff 8px, #0000ff 12px, /* Azul */
+    #ffffff 12px, #ffffff 16px, /* Blanco */
+    #ff0000 16px, #ff0000 20px, /* Rojo */
+    #ffffff 20px, #ffffff 24px, /* Blanco */
+    #0000ff 24px, #0000ff 28px, /* Azul */
+    #ffffff 28px, #ffffff 32px  /* Blanco */
+  );
+  border-radius: 10px; /* Esquinas redondeadas */
+  border: 2px solid #ffffff; /* Borde blanco para darle contraste */
+}
+
+/* Estilo cuando el thumb está siendo hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: repeating-linear-gradient(45deg, 
+    #ff4d4d, #ff4d4d 4px, 
+    #ffffff 4px, #ffffff 8px, 
+    #4d4dff 8px, #4d4dff 12px, 
+    #ffffff 12px, #ffffff 16px, 
+    #ff4d4d 16px, #ff4d4d 20px, 
+    #ffffff 20px, #ffffff 24px, 
+    #4d4dff 24px, #4d4dff 28px, 
+    #ffffff 28px, #ffffff 32px  
+  );
 }
