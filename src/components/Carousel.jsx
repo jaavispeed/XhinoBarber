@@ -9,11 +9,11 @@ import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 
 
-import "../../css/Carousel.css";
-import Corte1 from "../../assets/cortesdepelo/Corte1.jpeg";
-import Corte2 from "../../assets/cortesdepelo/Corte2.jpeg";
-import Corte3 from "../../assets/cortesdepelo/Corte3.jpeg";
-import Corte4 from "../../assets/cortesdepelo/Corte4.jpeg";
+import "../css/Carousel.css";
+import Corte1 from "../assets/cortesdepelo/Corte1.jpeg";
+import Corte2 from "../assets/cortesdepelo/Corte2.jpeg";
+import Corte3 from "../assets/cortesdepelo/Corte3.jpeg";
+import Corte4 from "../assets/cortesdepelo/Corte4.jpeg";
 
 export const Carousel = () => {
   return (
