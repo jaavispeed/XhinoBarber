@@ -1,38 +1,45 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import barberlogo from '../../assets/barberlogo.png'
-import "./Carousel.css";  // Importa el archivo CSS
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Pagination, Autoplay } from 'swiper/modules';
+
+
+import "../../css/Carousel.css";
+import Corte1 from "../../assets/cortesdepelo/Corte1.jpeg";
+import Corte2 from "../../assets/cortesdepelo/Corte2.jpeg";
+import Corte3 from "../../assets/cortesdepelo/Corte3.jpeg";
+import Corte4 from "../../assets/cortesdepelo/Corte4.jpeg";
 
 export const Carousel = () => {
-
-    const images = [
-        barberlogo,
-        barberlogo,
-        barberlogo
-      ];
-
-    return (
-
-        <Swiper 
-            modules={[Navigation, Pagination]}
-            navigation 
-            pagination 
-            loop={true}
-            className="mySwiper"
-            >
-            {images.map((img, index) => (
-        <SwiperSlide key={index} >
-          <img 
-            src={img} 
-            alt={`Slide ${index}`} 
-        />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-    )
+  return (
+    <>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        loop={true}
+        autoplay={{
+          delay: 2500, 
+          disableOnInteraction: false, 
+        }}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide><img src={Corte1} alt="Corte 1" /></SwiperSlide>
+        <SwiperSlide><img src={Corte2} alt="Corte 2" /></SwiperSlide>
+        <SwiperSlide><img src={Corte3} alt="Corte 3" /></SwiperSlide>
+        <SwiperSlide><img src={Corte4} alt="Corte 4" /></SwiperSlide>
+      </Swiper>
+    </>
+  );
 }
 
 export default Carousel;

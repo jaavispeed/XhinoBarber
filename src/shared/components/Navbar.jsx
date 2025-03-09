@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import './Navbar.css';
+import { Link } from 'react-router-dom';
+import "../../css/Navbar.css";
 import barberlogo from "../../assets/barberlogo.png";
 
 export const Navbar = () => {

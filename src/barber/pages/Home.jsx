@@ -1,4 +1,6 @@
+import Carousel from "../../shared/components/Carousel";
 import "./Home.css"
+
 
 export const LandingPage = () => {
   return (
@@ -27,6 +29,8 @@ export const LandingPage = () => {
         </div>
 
         <h1 className="text-center">Soy Jose Moya, barbero comprometido <br></br> con ofrecer cortes de pelo de calidad.</h1>
+
+        <Carousel />
 
         {/* Botón Agenda ahora */}
         <button className="agenda-button">Agenda ahora</button>
