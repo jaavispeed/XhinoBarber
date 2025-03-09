@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -7,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 
 import "../../css/Carousel.css";
@@ -30,7 +29,7 @@ export const Carousel = () => {
           delay: 2500, 
           disableOnInteraction: false, 
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[ Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide><img src={Corte1} alt="Corte 1" /></SwiperSlide>
