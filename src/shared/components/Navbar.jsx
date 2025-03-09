@@ -17,18 +17,7 @@ export const Navbar = () => {
           />
             XhinoBarber
           </Link>
-
-          <div className="navbar-nav">
-            <NavLink className="nav-item nav-link text-white" to="">
-              Disponibilidad
-            </NavLink>
-
-            <NavLink className="nav-item nav-link text-white" to="">
-              Agendar
-            </NavLink>
-          </div>
         </div>
-        
       </div>
     </nav>
   );
