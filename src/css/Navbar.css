@@ -10,12 +10,7 @@
   z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
   margin: 0; /* Elimina márgenes */
   padding: 0; /* Elimina el relleno si es necesario */
-  height: 60px; /* Define la altura del navbar (ajusta este valor según el tamaño del navbar) */
-}
-
-/* Espaciado superior en el body o el contenedor principal */
-body {
-  padding-top: 60px; /* Añade el mismo valor que la altura del navbar */
+  height: 60px; 
 }
 
 .navbar .navbar-brand {

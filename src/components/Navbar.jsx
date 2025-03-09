@@ -9,7 +9,7 @@ export const Navbar = () => {
       <div className="container-fluid">
         <div className="navbar-collapse d-flex justify-content-between w-100">
 
-          <Link className="navbar-brand mx-auto" to="/">
+          <Link className="navbar-brand mx-auto" onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}>
           <img 
             src={barberlogo} 
             alt="XhinoBarber" 
