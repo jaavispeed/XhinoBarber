@@ -1,8 +1,9 @@
 .swiper {
-    width: 1400px; 
-    height: 500px; 
-    margin-bottom: 30px;
-    margin-top: 20px;
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    max-width: 800px; /* Limita el ancho máximo a 800px */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin: 20px auto 30px auto; /* Centra el swiper horizontalmente */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción de 16:9 */
 }
 
 .swiper-slide {
@@ -21,21 +22,26 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;  
+    object-fit: cover;
     object-position: center;
 }
 
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .swiper {
-        width: 100%; 
-        height: 300px; /* Ajusta la altura para pantallas pequeñas */
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; /* Mantiene la proporción de 16:9 en pantallas más pequeñas */
     }
 }
 
 @media (max-width: 480px) {
     .swiper {
-        height: 250px; /* Ajusta aún más la altura en pantallas muy pequeñas */
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 40 / 20; /* Mantiene la proporción de 16:9 en pantallas pequeñas */
     }
     
     .swiper-slide {
