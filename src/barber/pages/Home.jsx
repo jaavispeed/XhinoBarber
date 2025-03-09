@@ -27,6 +27,9 @@ export const LandingPage = () => {
         </div>
 
         <h1 className="text-center">Soy Jose Moya, barbero comprometido <br></br> con ofrecer cortes de pelo de calidad.</h1>
+
+        {/* Botón Agenda ahora */}
+        <button className="agenda-button">Agenda ahora</button>
       </div>
     </>
   );
