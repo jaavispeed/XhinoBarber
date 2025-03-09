@@ -1,4 +1,10 @@
 body {
-    font-family: 'Jockey One', sans-serif;
-  }
-  
+  font-family: 'Jockey One', sans-serif;
+}
+
+.separator {
+  width: 50%; /* O usa un valor fijo, como 300px */
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px auto; /* Centrada horizontalmente */
+}

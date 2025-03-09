@@ -1,7 +1,6 @@
 import Carousel from "./Carousel";
 import "../css/Home.css";
 
-
 export const LandingPage = () => {
   return (
     <>
@@ -29,12 +28,15 @@ export const LandingPage = () => {
           </a>
         </div>
 
-
         <Carousel />
 
         {/* Botón Agenda ahora */}
-        <button className="agenda-button">Agenda ahora</button>
+        <button onClick={() => document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' })} className="agenda-button">Agenda ahora</button>
+        <footer>
+          <p>&copy; 2025 XhinoBarber. Todos los derechos reservados.</p>
+        </footer>
       </div>
+
     </>
   );
 };
