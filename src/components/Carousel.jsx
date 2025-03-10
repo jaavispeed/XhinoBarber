@@ -14,6 +14,8 @@ import Corte1 from "../assets/cortesdepelo/Corte1.jpeg";
 import Corte2 from "../assets/cortesdepelo/Corte2.jpeg";
 import Corte3 from "../assets/cortesdepelo/Corte3.jpeg";
 import Corte4 from "../assets/cortesdepelo/Corte4.jpeg";
+import Corte5 from "../assets/cortesdepelo/Corte5.jpeg";
+
 
 export const Carousel = () => {
   return (
@@ -36,6 +38,7 @@ export const Carousel = () => {
         <SwiperSlide><img src={Corte2} alt="Corte 2" /></SwiperSlide>
         <SwiperSlide><img src={Corte3} alt="Corte 3" /></SwiperSlide>
         <SwiperSlide><img src={Corte4} alt="Corte 4" /></SwiperSlide>
+        <SwiperSlide><img src={Corte5} alt="Corte 5" /></SwiperSlide>
       </Swiper>
     </>
   );
