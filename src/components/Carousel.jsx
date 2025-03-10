@@ -30,7 +30,7 @@ export const Carousel = () => {
           delay: 2500, 
           disableOnInteraction: false, 
         }}
-        modules={[ Autoplay]}
+      modules={[ Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide><img src={Corte1} alt="Corte 1" /></SwiperSlide>
