@@ -79,7 +79,7 @@ const handleSubmit = async (event) => {
                 step="3600" // Esto limita la selección a horas exactas (cada 3600 segundos = 1 hora)
               />
             </div>
-            <button type="submit">Enviar</button>
+            <button className="button-form" type="submit">Enviar</button>
           </form>
         </div>
       </div>
