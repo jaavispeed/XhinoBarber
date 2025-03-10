@@ -31,6 +31,12 @@ const handleSubmit = async (event) => {
   try {
     const response = await axios.post("http://localhost:3000/api/agendamiento", formData);
     console.log("Formulario enviado con éxito:", response.data);
+
+    setName("");
+    setLastName("");
+    setPhone("");
+    setEmail("");
+    setDateCita("");
   } catch (error) {
     console.error("Error al enviar el formulario:", error);
   }
