@@ -19,6 +19,7 @@ export const Calendario = () => {
                 const eventosFormateados = eventos.map(evento => ({
                     title: evento.title,
                     start: evento.start,
+                    end: evento.end, // Asegúrate de incluir esta propiedad
                     stateCita: evento.stateCita,
                 }));
 
@@ -40,7 +41,7 @@ export const Calendario = () => {
             <FullCalendar className="Calendario"
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="timeGridWeek"
-                selectable={true}
+                selectable={false}
                 events={eventos}
                 select={handleDateSelect}
                 timeZone="UTC-3"
@@ -49,9 +50,23 @@ export const Calendario = () => {
                 slotMaxTime="22:00:00"   
                 slotDuration="01:00:00"
                 allDaySlot={false}
-                buttonText={{
-                    today: "Hoy"
+                dayHeaderFormat={{
+                    weekday: 'long', 
+                    day: 'numeric',  
                 }}
+                titleFormat={{ month: 'long', year: 'numeric' }} 
+                headerToolbar={{
+                    left: "", 
+                    center: "title", // Mantiene solo el título del calendario
+                    right: "",
+                }}
+                eventTimeFormat={{
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true,
+                }}
+                aspectRatio={1.5} // Esto ajusta la proporción del calendario, ideal para hacer que sea más responsivo
+
             />
 
         </div>

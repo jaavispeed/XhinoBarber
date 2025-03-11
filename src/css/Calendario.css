@@ -3,8 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 100vh; 
-}
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden; /* Oculta el scrollbar en el contenedor principal */
 
+}
 
 .fc {
     width: 100%;
@@ -16,8 +19,42 @@
     border-radius: 5px;
 }
 
+
 .fc-timegrid-slot {
     height: 50px !important; 
     min-height: 50px !important;
     max-height: 50px !important;
+}
+
+
+.fc-header-title {
+    text-transform: capitalize; /* Hace que la primera letra de la palabra sea mayúscula */
+}
+
+
+.fc-scroller {
+    overflow: scroll !important; /* Permite el desplazamiento */
+    -ms-overflow-style: none;  /* Para navegadores de Internet Explorer */
+    scrollbar-width: none; /* Para Firefox */
+}
+
+
+.fc-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+/* Reglas responsivas para pantallas pequeñas */
+@media (max-width: 768px) {
+    .fc {
+        width: 100%;
+        height: auto;
+    }
+
+    .fc-day {
+        font-size: 10px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .fc-timegrid-slot {
+        font-size: 10px; /* Ajusta el tamaño de la fuente para las celdas del tiempo */
+    }
 }
