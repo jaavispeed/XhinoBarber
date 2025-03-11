@@ -1,0 +1,12 @@
+.Calendario {
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+    height: 100vh;            /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.fc {  /* Aplica a los elementos internos de FullCalendar */
+    width: 50%;              /* Hace que el calendario ocupe el 50% del ancho de la pantalla */
+    max-width: 1200px;       /* Limita el ancho máximo para que no se estire demasiado en pantallas grandes */
+    margin: 0 auto;          /* Centra el calendario dentro del contenedor */
+}
