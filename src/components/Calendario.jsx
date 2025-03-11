@@ -46,10 +46,12 @@ export const Calendario = () => {
                 timeZone="UTC-3"
                 locale="es"
                 slotMinTime="10:00:00"
-                slotMaxTime="22:00:00"   /* Ajustado para asegurar que la última franja horaria no se estire */
-                slotDuration="01:00:00"   /* Duración de las franjas horarias de 30 minutos */
+                slotMaxTime="22:00:00"   
+                slotDuration="01:00:00"
                 allDaySlot={false}
-                
+                buttonText={{
+                    today: "Hoy"
+                }}
             />
 
         </div>

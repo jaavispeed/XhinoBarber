@@ -1,24 +1,23 @@
-/* Asegura que el calendario esté centrado correctamente */
 .Calendario-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Asegura que el contenedor tenga una altura fija */
+    height: 100vh; 
 }
 
-/* Ajuste a FullCalendar */
+
 .fc {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     height: 67%;
     background-color: white;
-    border: 1px solid rgb(207, 207, 207); /* Borde negro de 2px */
+    border: 1px solid rgb(207, 207, 207); 
     border-radius: 5px;
 }
 
 .fc-timegrid-slot {
-    height: 50px !important; /* Ajusta este valor según sea necesario */
+    height: 50px !important; 
     min-height: 50px !important;
     max-height: 50px !important;
 }
