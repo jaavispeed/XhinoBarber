@@ -19,8 +19,13 @@ export const Calendario = () => {
                 const eventosFormateados = eventos.map(evento => ({
                     title: evento.title,
                     start: evento.start,
-                    end: evento.end, // Asegúrate de incluir esta propiedad
                     stateCita: evento.stateCita,
+                    className: evento.stateCita === "Confirmado" 
+                        ? "evento-confirmado" 
+                        : evento.stateCita === "Pendiente"
+                        ? "evento-pendiente" 
+                        : "",
+
                 }));
 
                 console.log("Eventos formateados para FullCalendar:", eventosFormateados); 
@@ -46,9 +51,9 @@ export const Calendario = () => {
                 select={handleDateSelect}
                 timeZone="UTC-3"
                 locale="es"
-                slotMinTime="10:00:00"
-                slotMaxTime="22:00:00"   
-                slotDuration="01:00:00"
+                slotMinTime="09:00:00"
+                slotMaxTime="24:00:00"   
+                slotDuration="00:30:00" 
                 allDaySlot={false}
                 dayHeaderFormat={{
                     weekday: 'long', 

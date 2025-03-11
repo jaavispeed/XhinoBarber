@@ -5,7 +5,7 @@
     height: 100vh; 
     text-transform: capitalize;
     font-family:Arial, Helvetica, sans-serif;
-    overflow: hidden; /* Oculta el scrollbar en el contenedor principal */
+    overflow: hidden;
 
 }
 
@@ -28,19 +28,32 @@
 
 
 .fc-header-title {
-    text-transform: capitalize; /* Hace que la primera letra de la palabra sea mayúscula */
+    text-transform: capitalize; 
 }
 
 
 .fc-scroller {
-    overflow: scroll !important; /* Permite el desplazamiento */
-    -ms-overflow-style: none;  /* Para navegadores de Internet Explorer */
-    scrollbar-width: none; /* Para Firefox */
+    overflow: scroll !important; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 
 
 .fc-scroller::-webkit-scrollbar {
     display: none;
+}
+
+
+.evento-confirmado {
+    background-color: #006400; 
+    color: white; 
+    border-color: #004d00; 
+}
+
+.evento-pendiente {
+    background-color: #FFB800; 
+    color: black; 
+    border-color: #FF9C00; 
 }
 
 /* Reglas responsivas para pantallas pequeñas */
@@ -51,10 +64,10 @@
     }
 
     .fc-day {
-        font-size: 10px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 10px; 
     }
 
     .fc-timegrid-slot {
-        font-size: 10px; /* Ajusta el tamaño de la fuente para las celdas del tiempo */
+        font-size: 10px; 
     }
 }
