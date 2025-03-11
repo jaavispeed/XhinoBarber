@@ -16,7 +16,23 @@ export const Formulario = () => {
     const handleApellidoChange = (event) => setLastName(event.target.value);
     const handleTelefonoChange = (event) => setPhone(event.target.value);
     const handleCorreoChange = (event) => setEmail(event.target.value);
-    const handleFechaHoraChange = (event) => setSelectedDate(event.target.value);
+
+    const handleFechaChange = (event) => {
+        const newDate = event.target.value;
+        setSelectedDate((prevState) => ({
+            ...prevState,
+            date: newDate,
+        }));
+    };
+
+    const handleHoraChange = (event) => {
+        const newTime = event.target.value;
+        setSelectedDate((prevState) => ({
+            ...prevState,
+            time: newTime,
+        }));
+    };
+
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -27,7 +43,8 @@ export const Formulario = () => {
             lastName,
             phone,
             email,
-            dateCita: selectedDate, 
+            dateCita: `${selectedDate.date}T${selectedDate.time}:00`, // Añadir ":00" para indicar que los minutos son 00
+
         };
 
         try {
@@ -40,7 +57,7 @@ export const Formulario = () => {
             setEmail("");
             setSelectedDate("");
 
-            window.location.reload(); 
+            window.location.reload();
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
         } finally {
@@ -81,16 +98,42 @@ export const Formulario = () => {
 
                             <div className="mb-3">
                                 <label htmlFor="fechaHora" className="form-label">Fecha y Hora</label>
-                                <input
-                                    type="datetime-local"
-                                    id="fechaHora"
-                                    className="form-control"
-                                    value={selectedDate}
-                                    onChange={handleFechaHoraChange}
-                                    required
-                                />
+                                <div className="d-flex">
+                                    <input
+                                        type="date"
+                                        id="fecha"
+                                        className="form-control me-2"
+                                        value={selectedDate.date}
+                                        onChange={handleFechaChange}
+                                        required
+                                    />
+                                    <select
+                                        id="hora"
+                                        className="form-control"
+                                        value={selectedDate.time}
+                                        onChange={handleHoraChange}
+                                        required
+                                    >
+                                        <option value="" disabled selected>Selecciona la hora</option>
+                                        {/* Aquí puedes agregar las horas que desees */}
+                                        <option value="09">09:00</option>
+                                        <option value="10">10:00</option>
+                                        <option value="11">11:00</option>
+                                        <option value="12">12:00</option>
+                                        <option value="13">13:00</option>
+                                        <option value="14">14:00</option>
+                                        <option value="15">15:00</option>
+                                        <option value="16">16:00</option>
+                                        <option value="17">17:00</option>
+                                        <option value="18">18:00</option>
+                                        <option value="19">19:00</option>
+                                        <option value="20">20:00</option>
+                                        <option value="21">21:00</option>
+                                        <option value="22">22:00</option>
+                                        <option value="13">23:00</option>
+                                    </select>
+                                </div>
                             </div>
-
                             <button type="submit" className="btn btn-primary w-100">Enviar</button>
                         </form>
                     </div>
