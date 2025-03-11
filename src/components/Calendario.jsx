@@ -36,15 +36,22 @@ export const Calendario = () => {
     };
 
     return (
-        <div className="Calendario">
-            <FullCalendar
+        <div className="Calendario-container">
+            <FullCalendar className="Calendario"
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="timeGridWeek"
                 selectable={true}
                 events={eventos}
                 select={handleDateSelect}
                 timeZone="UTC-3"
+                locale="es"
+                slotMinTime="10:00:00"
+                slotMaxTime="22:00:00"   /* Ajustado para asegurar que la última franja horaria no se estire */
+                slotDuration="01:00:00"   /* Duración de las franjas horarias de 30 minutos */
+                allDaySlot={false}
+                
             />
+
         </div>
     );
 };
