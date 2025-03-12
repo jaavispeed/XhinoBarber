@@ -12,7 +12,7 @@ export const Calendario = () => {
     const [eventos, setEventos] = useState([]);
 
     useEffect(() => {
-        axios.get("https://back-xhino-barber.vercel.app/api/agendamiento")
+        axios.get("https://backend-xhino-barber.vercel.app/api/agendamiento")
             .then(response => {
                 const eventos = response.data;
 
