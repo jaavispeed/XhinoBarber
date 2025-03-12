@@ -15,8 +15,9 @@ export const Calendario = () => {
         axios.get("https://backend-xhino-barber.vercel.app/api/agendamiento")
             .then(response => {
                 const eventos = response.data;
+                const eventosFiltrados = eventos.filter(evento => evento.stateCita !== "Cancelado");
 
-                const eventosFormateados = eventos.map(evento => ({
+                const eventosFormateados = eventosFiltrados.map(evento => ({
                     title: evento.title,
                     start: evento.start,
                     stateCita: evento.stateCita,
