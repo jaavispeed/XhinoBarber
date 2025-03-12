@@ -48,7 +48,7 @@ export const Formulario = () => {
         };
 
         try {
-            const response = await axios.post("http://localhost:3000/api/agendamiento", formData);
+            const response = await axios.post("https://back-xhino-barber.vercel.app/api/agendamiento", formData);
             console.log("Formulario enviado con éxito:", response.data);
 
             setName("");
