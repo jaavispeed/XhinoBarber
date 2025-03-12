@@ -53,7 +53,7 @@ export const Calendario = () => {
                 locale="es"
                 slotMinTime="09:00:00"
                 slotMaxTime="24:00:00"   
-                slotDuration="00:30:00" 
+                slotDuration="01:00:00" 
                 allDaySlot={false}
                 dayHeaderFormat={{
                     weekday: 'long', 
