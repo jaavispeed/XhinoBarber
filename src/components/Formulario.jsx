@@ -71,7 +71,7 @@ export const Formulario = () => {
 
             {!isLoading && (
                 <div className="container">
-                    <h2 className="text-center">Formulario de Contacto</h2>
+                    <h2 className="text-center">Agenda tu hora aqui</h2>
                     <div className="form-container">
                         <form className="form" onSubmit={handleSubmit}>
                             <div className="row">
