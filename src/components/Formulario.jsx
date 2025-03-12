@@ -110,11 +110,11 @@ export const Formulario = () => {
                                     <select
                                         id="hora"
                                         className="form-control"
-                                        value={selectedDate.time}
+                                        value={selectedDate.time || ""}
                                         onChange={handleHoraChange}
                                         required
                                     >
-                                        <option value="" disabled selected>Selecciona la hora</option>
+                                        <option value="" disabled>Selecciona la hora</option>
                                         {/* Aquí puedes agregar las horas que desees */}
                                         <option value="09">09:00</option>
                                         <option value="10">10:00</option>
@@ -130,7 +130,7 @@ export const Formulario = () => {
                                         <option value="20">20:00</option>
                                         <option value="21">21:00</option>
                                         <option value="22">22:00</option>
-                                        <option value="13">23:00</option>
+                                        <option value="23">23:00</option>
                                     </select>
                                 </div>
                             </div>

@@ -71,6 +71,11 @@ export const Calendario = () => {
                     hour12: true,
                 }}
                 aspectRatio={1.5} // Esto ajusta la proporción del calendario, ideal para hacer que sea más responsivo
+                slotLabelFormat={{
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true,
+                }}
 
             />
 
