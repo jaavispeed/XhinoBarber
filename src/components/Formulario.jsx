@@ -3,6 +3,8 @@ import axios from "axios";
 import "../css/Formulario.css";
 import { Spinner } from "../components/Spinner";
 import { DateContext } from "../context/DateContext";
+import Swal from "sweetalert2";
+
 
 export const Formulario = () => {
     const { selectedDate, setSelectedDate } = useContext(DateContext);
@@ -156,16 +158,18 @@ export const Formulario = () => {
         try {
             const response = await axios.post("https://backend-xhino-barber.vercel.app/api/agendamiento", formData);
             console.log("Formulario enviado con éxito:", response.data);
-            alert("Gracias por agendar tu cita, por favor revisa tu correo para confirmar tu asistencia.");
-
+            Swal.fire({
+                icon: "success",
+                title: "¡Cita Agendada!",
+                text: "Hemos enviado un correo de confirmación con los detalles de tu cita. Por favor, revisa tu bandeja de entrada y confirma tu asistencia.",
+                confirmButtonColor: "#000000",
+            });
 
             setName("");
             setLastName("");
             setPhone("");
             setEmail("");
             setSelectedDate({ date: "", time: "" });
-
-            window.location.reload();
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
         } finally {
