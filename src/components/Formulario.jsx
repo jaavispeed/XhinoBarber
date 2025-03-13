@@ -156,6 +156,8 @@ export const Formulario = () => {
         try {
             const response = await axios.post("https://backend-xhino-barber.vercel.app/api/agendamiento", formData);
             console.log("Formulario enviado con éxito:", response.data);
+            alert("Gracias por agendar tu cita, por favor revisa tu correo para confirmar tu asistencia.");
+
 
             setName("");
             setLastName("");
